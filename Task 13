@@ -1,1 +1,10 @@
+ListView.builder(
+  itemCount: 10,
+  itemBuilder: (context, index) {
+    return ListTile(
+      leading: Icon(Icons.label),
+      title: Text("List Item ${index + 1}"),
+    );
+  },
+)
 
