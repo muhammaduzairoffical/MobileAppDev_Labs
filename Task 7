@@ -1,1 +1,6 @@
+floatingActionButton: FloatingActionButton(
+  backgroundColor: Colors.blue,
+  onPressed: () {},
+  child: Icon(Icons.add),
+),
 
