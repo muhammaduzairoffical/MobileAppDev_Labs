@@ -1,1 +1,61 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("Login Screen"),
+        ),
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              // Username Placeholder
+              Container(
+                padding: EdgeInsets.all(12),
+                margin: EdgeInsets.symmetric(vertical: 8, horizontal: 20),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Text("Username"),
+              ),
+
+              // Password Placeholder
+              Container(
+                padding: EdgeInsets.all(12),
+                margin: EdgeInsets.symmetric(vertical: 8, horizontal: 20),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.grey),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Text("Password"),
+              ),
+
+              // Login Button
+              Container(
+                padding: EdgeInsets.all(12),
+                margin: EdgeInsets.only(top: 20),
+                decoration: BoxDecoration(
+                  color: Colors.blue,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Text(
+                  "Login",
+                  style: TextStyle(color: Colors.white, fontSize: 16),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
 
